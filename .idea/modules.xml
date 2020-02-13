@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hibernate-the-ripper.iml" filepath="$PROJECT_DIR$/hibernate-the-ripper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernate-the-ripper-entity/hibernate-the-ripper-entity.iml" filepath="$PROJECT_DIR$/hibernate-the-ripper-entity/hibernate-the-ripper-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernate-the-ripper-util/hibernate-the-ripper-util.iml" filepath="$PROJECT_DIR$/hibernate-the-ripper-util/hibernate-the-ripper-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa-and-hibernate-examples/jpa-and-hibernate-examples.iml" filepath="$PROJECT_DIR$/jpa-and-hibernate-examples/jpa-and-hibernate-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-jpa-examples/spring-boot-jpa-examples.iml" filepath="$PROJECT_DIR$/spring-boot-jpa-examples/spring-boot-jpa-examples.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hibernate-the-ripper-util" />
+        <module name="spring-boot-jpa-examples" />
+        <module name="jpa-and-hibernate-examples" />
+        <module name="hibernate-the-ripper-entity" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hibernate-the-ripper" target="11" />
+      <module name="hibernate-the-ripper-entity" target="11" />
+      <module name="hibernate-the-ripper-util" target="11" />
+      <module name="jpa-and-hibernate-examples" target="11" />
+      <module name="spring-boot-jpa-examples" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

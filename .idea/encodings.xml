@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/hibernate-the-ripper-entity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hibernate-the-ripper-entity/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hibernate-the-ripper-util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hibernate-the-ripper-util/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa-and-hibernate-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa-and-hibernate-examples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-jpa-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-jpa-examples/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

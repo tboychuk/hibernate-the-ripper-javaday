@@ -1,0 +1,5 @@
+# Project exclude paths
+/hibernate-the-ripper-entity/target/
+/hibernate-the-ripper-util/target/
+/jpa-and-hibernate-examples/target/
+/spring-boot-jpa-examples/target/
