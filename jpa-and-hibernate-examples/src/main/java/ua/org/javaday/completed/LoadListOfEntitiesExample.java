@@ -1,4 +1,4 @@
-package ua.org.javaday;
+package ua.org.javaday.completed;
 
 import ua.org.javaday.entity.Account;
 import ua.org.javaday.util.data.TestDataGenerator;

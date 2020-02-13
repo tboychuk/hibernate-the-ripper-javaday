@@ -12,7 +12,7 @@ public class JpaUtil {
     private static EntityManagerFactory emf;
 
     public static void init() {
-        emf = Persistence.createEntityManagerFactory("DevoxxEntitiesH2");
+        emf = Persistence.createEntityManagerFactory("JavaDayDemo");
     }
 
     public static void close() {

@@ -1,16 +1,15 @@
 package ua.org.javaday.config;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import ua.org.javaday.repository.AccountRepository;
 import ua.org.javaday.util.data.TestDataGenerator;
 
 @Configuration
+@RequiredArgsConstructor
 public class DataGeneratorConfig implements InitializingBean {
-
-    @Autowired
-    private AccountRepository accountRepository;
+    private final AccountRepository accountRepository;
 
     @Override
     public void afterPropertiesSet() {

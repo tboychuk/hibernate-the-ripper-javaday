@@ -1,4 +1,4 @@
-package ua.org.javaday;
+package ua.org.javaday.completed;
 
 import ua.org.javaday.entity.Account;
 import ua.org.javaday.util.data.TestDataGenerator;
@@ -7,27 +7,26 @@ import static ua.org.javaday.util.jpa.JpaUtil.close;
 import static ua.org.javaday.util.jpa.JpaUtil.init;
 import static ua.org.javaday.util.jpa.JpaUtil.performWithinPersistenceContext;
 
-public class RemoveAndSaveBackEntityExample {
+public class UpdateEntityExample {
 
     public static void main(String[] args) {
         init();
         try {
-            removeEntityAndSaveItBack();
+            updateEntity();
         } finally {
             close();
         }
     }
 
-    private static void removeEntityAndSaveItBack() {
+    private static void updateEntity() {
         Account account = TestDataGenerator.generateAccount();
         performWithinPersistenceContext(entityManager -> entityManager.persist(account));
+        System.out.printf("> Persisted account: %s%n", account);
 
         performWithinPersistenceContext(entityManager -> {
             Account managedAccount = entityManager.find(Account.class, account.getId());
-            System.out.println("> Removing entity");
-            entityManager.remove(managedAccount);
-            System.out.println("> Persisting entity again");
-            entityManager.persist(managedAccount);
+            managedAccount.setLastName("X-Man");
+            System.out.printf("> Updated account: %s%n", managedAccount);
         });
     }
 }
