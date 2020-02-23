@@ -25,6 +25,16 @@ public class AccountRestController {
         accountService.removeById(id);
     }
 
+    @DeleteMapping("/hql/{id}")
+    public void removeWithHQL(@PathVariable Long id) {
+        accountService.removeByIdWithHQL(id);
+    }
+
+    @DeleteMapping("/crud/{id}")
+    public void removeWithCrudMethod(@PathVariable Long id) {
+        accountService.removeByIdWithCrudMethod(id);
+    }
+
     @PutMapping("/findby/{id}")
     public void updateAccountWithFindBy(@PathVariable Long id, @RequestParam String firstName) {
         accountService.updateFirstNameByIdWithFindBy(id, firstName);

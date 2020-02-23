@@ -20,6 +20,20 @@ public class AccountService {
         accountRepository.delete(account);
     }
 
+    //    @Transactional
+    public void removeByIdWithHQL(Long id) {
+        System.out.printf("> Removing account by id: %s with HQL query%n", id);
+        System.out.println("> Expecting SELECT!");
+        accountRepository.deleteByIdWithHQL(id);
+    }
+
+    //    @Transactional
+    public void removeByIdWithCrudMethod(Long id) {
+        System.out.printf("> Removing account by id: %s with CRUD method%n", id);
+        accountRepository.deleteById(id);
+        System.out.println("> Expecting SELECT!");
+    }
+
 //    @Transactional
     public void updateFirstNameByIdWithFindBy(Long id, String firstName) {
         Account one = accountRepository.findById(id).orElseThrow();

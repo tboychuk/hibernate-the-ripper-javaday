@@ -9,6 +9,12 @@ import ua.org.javaday.entity.Account;
 public interface AccountRepository extends JpaRepository<Account, Long> {
 
     @Modifying
-    @Query("update Account set firstName =:name where id=:id")
+    @Query("update Account set firstName = :name where id = :id")
     void updateFirstNameById(@Param("id") long id, @Param("name") String name);
+
+    void deleteById(long id);
+
+    @Modifying
+    @Query("delete from Account where id =:id")
+    void deleteByIdWithHQL(@Param("id") long id);
 }
