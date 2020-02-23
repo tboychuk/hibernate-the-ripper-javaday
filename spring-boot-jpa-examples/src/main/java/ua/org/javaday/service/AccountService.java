@@ -20,18 +20,17 @@ public class AccountService {
         accountRepository.delete(account);
     }
 
-    //    @Transactional
+//    @Transactional
     public void removeByIdWithHQL(Long id) {
         System.out.printf("> Removing account by id: %s with HQL query%n", id);
-        System.out.println("> Expecting SELECT!");
         accountRepository.deleteByIdWithHQL(id);
     }
 
-    //    @Transactional
+//    @Transactional
     public void removeByIdWithCrudMethod(Long id) {
         System.out.printf("> Removing account by id: %s with CRUD method%n", id);
         accountRepository.deleteById(id);
-        System.out.println("> Expecting SELECT!");
+        System.out.println("> Expecting SELECT!"); //Even under transaction!
     }
 
 //    @Transactional
